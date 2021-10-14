@@ -1,12 +1,54 @@
-$main-background: #cccccc;
-
+// $main-background: #cccccc;
 @import "fonts.scss";
 
-$ubuntuRegular: 'ubunturegular', Arial, sans-serif;
+$deep-blue: #1F3F68;
+$blue: #5A98D0;
+$white: #ffffff;
 
-body {
-  font-family: $ubuntuRegular;
-  background-color: $main-background;
+// $ubuntuRegular: 'ubunturegular', Arial, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  background-image: url( "../img/illustration.png");
+  background-repeat: no-repeat;
+  background-position: 80% 95px;
+  
+}
+
+.container{
+  width: 940px;
+  margin: 0 auto;
+}
+.btn{
+  width: 220px;
+  height: 56px;
+  font-family: gilory;
+  font-size: 16px;
+  line-height: 26px;
+  color: $white;
+  background: $blue;
+  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+  border: 0;
+  border-radius: 10px;
+ 
+}
+.infoP-text{
+  font-family: gilory;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.05em;
+}
+.section-title{
+  font-family: gilory;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: 0.05em;
+}
+
+
 @import "header.scss";
+@import "primary.scss";
+@import "about.scss";
