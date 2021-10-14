@@ -1,0 +1,12 @@
+$main-background: #cccccc;
+
+@import "fonts.scss";
+
+$ubuntuRegular: 'ubunturegular', Arial, sans-serif;
+
+body {
+  font-family: $ubuntuRegular;
+  background-color: $main-background;
+}
+
+@import "header.scss";
