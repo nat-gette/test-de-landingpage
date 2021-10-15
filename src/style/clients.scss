@@ -34,6 +34,14 @@
     justify-content: center;
     align-items: center;
 }
+.clients--link{
+    background-color: rgba(#1F3F68, 0.2);
+    transition: all ease-in .5s;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(#1F3F68, 0.3);
+    }
+}
 .clients-space__link{
     font-family: gilory;
     font-size: 20px;

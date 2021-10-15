@@ -10,7 +10,7 @@
 <body>
   <header class="header">
     <div class="header__wrap">
-        <img class="logo" src="img/logo.png" alt="logo">
+        <img class="header__logo " src="img/logo.png" alt="logo">
         <button class="header__hamburger">open/close menu</button>
     </div>
 
@@ -18,12 +18,13 @@
 
 <section class="primary">
     <div class="container primary__wrap">
-        <div class="primary-element">
-            <h1 class="primary-element__slogan">New Automation Tool for Your Home</h1>
-            <p class="primary-element__text infoP-text">
+        <div class="primary__element">
+            <p class="primary__slogan">New Automation Tool for Your Home</p>
+            <!-- убрать info-text , стили перекинуть на body -->
+            <p class="primary__text info-text ">
                 Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit Faucibus tristique vulputate ultrices ut mauris <br> tellus at. Posuere sollicitudin odio tellus elit.
             </p>
-            <button class="btn primary-element__btn">See Our Project</button>
+            <button class="btn primary__btn">See Our Project</button>
         </div>
     </div>
 </section>
@@ -32,12 +33,15 @@
     <div class="container about__wrap">
         <h2 class="about__title section-title" >What we do to help our client grow in digital era</h2>
         <div class="about__infoBlock-section">
+
             <div class="about__infoBlock-column-left">
+                <!-- карточки переименовать в article или item -->
                 <div class=" about__infoBlock">
+                    <!-- перименовать модификатор относительно названия элемента -->
                     <img class="about__infoBlock-img img-about-first" src="img/about-first.png" alt="">
                     <h3 class="about__infoBlock-title"> Make Your business To Be Better Famous In Internet </h3>
                     <p class="about__infoBlock-text infoP-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <a class="about__infoBlock-link" href="">Learn more</a>
+                    <a class="about__infoBlock-link" href="#">Learn more</a>
                 </div>
             </div>
             <div class="about__infoBlock-column-right">
@@ -45,13 +49,13 @@
                     <img class="about__infoBlock-img img-about-second" src="img/about-second.png" alt="">
                     <h3 class="about__infoBlock-title"> Bring Technology To Your Comfrotable Home </h3>
                     <p class="about__infoBlock-text infoP-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <a class="about__infoBlock-link" href="">Learn more</a>
+                    <a class="about__infoBlock-link" href="#">Learn more</a>
                 </div>
                 <div class=" about__infoBlock">
                     <img class="about__infoBlock-img img-about-thitd" src="img/about-third.png" alt="">
                     <h3 class="about__infoBlock-title"> Build Your Digita Product That Suitable For Your Need</h3>
                     <p class="about__infoBlock-text infoP-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    <a class="about__infoBlock-link" href="">Learn more</a>
+                    <a class="about__infoBlock-link" href="#">Learn more</a>
                 </div>
             </div>
         </div>
@@ -60,7 +64,7 @@
 
 <section class="clients">
     <div class="container clients__wrap">
-        <div class="clients-header">
+        <div class="clients__header">
             <h2 class="clients-header__title section-title" >Our Beloved Client</h2>
             <p class="clients-header__text infoP-text">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
@@ -87,7 +91,8 @@
                 <li class="clients-space__item border-right"> 
                     <img src="img/LOGO CLIENT 7.png" alt="Logo Client 7">
                 </li>
-                <li class="clients-space__item"> 
+                <li class="clients-space__item clients--link"> 
+                    <!-- переименовать clients--link" в соответствии с элементом -->
                     <a class="clients-space__link" href="">More Clients</a>
                 </li>
             </ul>
@@ -105,6 +110,26 @@
             
     </div>
 </section>
+
+<footer class="footer">
+    <div class="footer__question question">
+        <div class="container question__wrap">
+            <div class="question__info">
+                <h2 class="question__title section-title" >Intersted to work with our team?</h2>
+                <p class="question__text infoP-text">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <button class="btn question__btn">Let’s Talk</button>
+                
+        </div>   
+    </div>
+    <div class="footer__contacts">
+        <div class="container">
+
+        </div>   
+    </div>
+</footer>
+
+<!-- для закруглений заднего фона посмотреть svg poligon  -->
 
   <!-- <div class="header">
     <button class="header__hamburger hamburger">Открыть/закрыть меню</button>
