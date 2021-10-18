@@ -1,0 +1,109 @@
+// .question
+
+.question__wrap {
+    display: flex;
+    align-items:center;
+
+}
+
+.question__info {
+    max-width: 460px;
+    margin: 0 180px 0 0;
+}
+
+.question__btn {
+    min-width: 220px;
+}
+
+.question__title {
+    max-width: 317px;
+}
+
+// .question__text
+
+// .about-company
+
+.about-company__wrap  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-company__contacts{
+    width: 40%;
+}
+.contacts{
+    padding:  0 70px 0 0;
+}
+
+.about-company__menu{
+    width: 30%;
+}
+
+.about-company__socials{
+    width: 30%;
+}
+
+.logo__footer{
+    margin: 0 15px 0 0;
+}
+
+.contacts__logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo__name {
+    font-family: gilory;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.02em;
+    }
+
+.contacts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.contacns__item {
+    display: flex;
+    margin: 0 0 18px 0;
+}
+.contacts__item-text {
+    margin: 0;;
+}
+
+.menu__list {
+    list-style: none;
+    padding: 0;
+
+}
+.menu__item{
+    margin: 0 0 18px 0;
+}
+.socials__list {
+    list-style: none;
+    padding: 0;
+}
+.contacts__socials {
+    list-style: none;
+}
+.menu__name {
+    font-family: gilory;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+.socials__name {
+    font-family: gilory;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+.socials__item{
+    margin: 0 0 18px 0;
+}
+.footer__copyright {
+    width: 100%;
+    margin: 64px  0;
+}
