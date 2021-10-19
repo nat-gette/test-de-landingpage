@@ -1,5 +1,8 @@
 // .question
-
+.footer{
+    background-color: $deep-blue ;
+    color: $white;
+}
 .question__wrap {
     display: flex;
     align-items:center;
@@ -70,7 +73,9 @@
     margin: 0 0 18px 0;
 }
 .contacts__item-text {
-    margin: 0;;
+    margin: 0 0 0 16px;
+    text-decoration: none;
+    color: $white ;
 }
 
 .menu__list {

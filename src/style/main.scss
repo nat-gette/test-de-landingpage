@@ -14,18 +14,19 @@ $white: #ffffff;
 body {
   margin: 0;
   background-image: url( "../img/illustration.png");
+  background-size: 750px, auto;
   background-repeat: no-repeat;
-  background-position: 80% 95px;
+  background-position: 88% 81px;
   
 }
 
-.container{
+.container {
   width: 980px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.btn{
+.btn {
   width: 220px;
   height: 56px;
   font-family: gilory;
@@ -36,6 +37,11 @@ body {
   box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
   border: 0;
   border-radius: 10px;
+  transition: all ease-in .5s;
+  cursor: pointer;
+  &:hover {
+       background-color: $dark-blue; 
+   }
  
 }
 .body-text{
@@ -62,3 +68,4 @@ body {
 @import "about.scss";
 @import "clients.scss";
 @import "footer.scss";
+@import "modal.scss"

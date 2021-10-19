@@ -11,7 +11,13 @@
   <header class="header">
     <div class="header__wrap">
         <img class="header__logo " src="img/logo.png" alt="logo">
-        <button class="header__hamburger">open/close menu</button>
+        <div class="header__hamburger  hamburger">open/close menu</div>
+        <ul class="hamburger__menu">
+            <li class="hamburger__item body-text">About</li>
+            <li class="hamburger__item body-text">What We Do</li>
+            <li class="hamburger__item body-text">Projects</li>
+            <li class="hamburger__item body-text">How It Work With Us</li>
+        </ul>
     </div>
 
 </header>
@@ -155,27 +161,30 @@
         </div>   
     </div>
 </footer>
-
+<div class="modal ">
+    <div class="modal__wrap">
+        <button class="modal__close">close menu</button>
+        <p class="modal__label">Send us massage</p>    
+        <div class="modal__input input">
+            <label class="input__name" for="userName">Full Name</label>
+            <input class="input__place" id="userName" type="text" placeholder="Your Name">
+          </div>
+            
+          <div class="modal__input input">
+              <label class="input__name" for="userPhone">Email</label>
+              <input class="input__place" id="userMail" type="text" placeholder="Your Email">
+          </div>
+          <div class="modal__input input">
+            <label class="input__name" for="userPhone">Message</label>
+            <input class="input__place input__place--message" id="userMessage" type="text" placeholder="Your Message">
+        </div>
+        <button class="modal__button btn"  >Submit</button>
+    </div>
+</div>
 <!-- для закруглений заднего фона посмотреть svg poligon  -->
 
-  <!-- <div class="header">
-    <button class="header__hamburger hamburger">Открыть/закрыть меню</button>
-    <ul class="header__menu menu">
-      <li class="menu__item">about me</li>
-      <li class="menu__item">projects</li>
-      <li class="menu__item">map</li>
-      <li class="menu__item">map</li>
-    </ul>
-  </div> -->
-
-  <!-- <div class="slider">
-    <img src="img/tree.png" alt="Дерево">
-    <img src="img/mountain-wallpaper.jpg" alt="Горы">
-    <img src="img/canada-mountains.jpg" alt="Горы">
-    <img src="img/tree.png" alt="Дерево">
-    <img src="img/mountain-wallpaper.jpg" alt="Горы">
-    <img src="img/canada-mountains.jpg" alt="Горы">
-  </div> -->
+ 
+  
 
   <!-- <svg>
     <use xlink:href='img/svg/symbol/sprite.svg#vk'></use>

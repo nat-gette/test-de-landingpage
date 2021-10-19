@@ -5,9 +5,52 @@
   width: 100%; 
   background-color: transparent;
   align-items: center;
-  padding: 0 56px 0 56px;
-  margin: 0auto;
+  padding: 51px 83px 0 83px;
+  margin: 0 auto;
 }
-.header__hamburger{
+
+.header__hamburger {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  width: 24px;
+  height: 16px;
+  padding: 0;
   font-size: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 6;
+
+}
+.hamburger__menu {
+  list-style: none;
+  display: none;
+}
+.header__hamburger:focus {
+  outline: none;
+}
+
+.header__hamburger::before,
+.header__hamburger::after {
+  content: ""; 
+  position: absolute;
+  width: 24px;
+  height: 2.5px;
+  background-color: $dark-blue ;
+  box-shadow: 0 8px 0 0 $dark-blue , 
+            0 16px 0 0 $dark-blue;
+  transition: all ease-out .3s;
+}
+
+.header__hamburger--active::before {
+  top: 5px;
+  transform: rotate(45deg);
+  box-shadow: none;
+}
+
+.header__hamburger--active::after {
+  top: 5px;
+  transform: rotate(-45deg);
+  box-shadow: none;
 }
