@@ -1,34 +1,8 @@
-// $('.slider').slick({
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3
-// });
 
-  
-// // let mainMenu = document.querySelector('.');
-// let mainHamburger = document.querySelector('.header__hamburger');
+let headerHumburger = document.querySelector('.header__hamburger');
 
-// mainHamburger.addEventListener('click', () => {
-//     mainMenu.classList.toggle("header__list--active");
-// })
-
-// let menuLinks = document.querySelectorAll('.header__link');
-// for (let menuLink of menuLinks){
-//       menuLink.addEventListener('click', (e) => {
-//           e.preventDefault();
-//           let scrollToElem = menuLink.getAttribute('href');
-//           let coordinates = document.querySelector(scrollToElem).offsetTop;
-//           window.scrollTo({
-//               top:coordinates -150,
-//               behavior: 'smooth'
-//           })
-//       })
-// }
-
-let headerHunburger = document.querySelector('.header__hamburger');
-
-headerHunburger.addEventListener('click', () => {
-    headerHunburger.classList.toggle("header__hamburger--active");
+headerHumburger.addEventListener('click', () => {
+    headerHumburger.classList.toggle("header__hamburger--active");
 })
 
 let modalPage = document.querySelector('.modal');
@@ -52,5 +26,18 @@ modalClose.addEventListener('click', () => {
     modalPage.classList.remove('modal--active');
 })
 
+let hamburgerMenu = document.querySelector('.hamburger__menu');
 
+headerHumburger.addEventListener('click', () => {
+    hamburgerMenu.classList.toggle("hamburger__menu--active");
+})
 
+// const userEmail = document.getElementById("userMail");
+
+// userEmail.addEventListener("input", function (event) {
+//   if (userEmail.validity.typeMismatch) {
+//     userEmail.setCustomValidity("I am expecting an e-mail address!");
+//   } else {
+//     userEmail.setCustomValidity("");
+//   }
+// });

@@ -1,10 +1,10 @@
-.header__wrap{
+.header__wrap {
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%; 
   background-color: transparent;
-  align-items: center;
+  align-items: flex-start;
   padding: 51px 83px 0 83px;
   margin: 0 auto;
 }
@@ -24,8 +24,23 @@
 
 }
 .hamburger__menu {
+  position: relative;
+  right: 30px;
+  width: 250px;
+  height: 250px;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  text-align: center;
   list-style: none;
+  background-color: $dark-blue ;
   display: none;
+   &--active{
+     display: block;
+   }
+}
+.hamburger__item {
+  color: $white ;
+  margin: 0 0 30px 0;
 }
 .header__hamburger:focus {
   outline: none;
@@ -53,4 +68,10 @@
   top: 5px;
   transform: rotate(-45deg);
   box-shadow: none;
+}
+
+@media ( max-width: 360px ) {
+  .header__wrap {
+      padding: 42px 53px 0 53px;
+  }
 }

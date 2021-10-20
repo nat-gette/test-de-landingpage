@@ -25,3 +25,21 @@
     letter-spacing: 0.05em;
     color: $deep-blue;
 }
+
+@media ( max-width: 360px ) {
+    .primary{
+        padding-bottom: 70px;
+    }
+   .primary__slogan{
+        margin: 115px 0 32px 0;
+        font-size: 47px;
+        line-height: 55px;
+    
+   }
+   .primary__element{
+       width: auto;
+   }
+   .primary__text{
+       margin: 0 0 35px 0;
+   }
+  }

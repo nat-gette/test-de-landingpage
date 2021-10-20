@@ -1,4 +1,4 @@
-.modal{
+.modal {
     display: none;
     background: rgba(#000, 0.4);
     width: 100%;
@@ -28,32 +28,31 @@
 
 .modal__close::before,
 .modal__close::after {
-  content: ""; 
-  position: absolute;
-  width: 24px;
-  height: 2.5px;
-  background-color: $dark-blue ;
-  box-shadow: 0 8px 0 0 $dark-blue , 
+    content: ""; 
+    position: absolute;
+    width: 24px;
+    height: 2.5px;
+    background-color: $dark-blue ;
+    box-shadow: 0 8px 0 0 $dark-blue , 
             0 16px 0 0 $dark-blue;
-  transition: all ease-out .3s;
-}
+    transition: all ease-out .3s;
+    }
 
 .modal__close::before {
-  left: 5px;
-  transform: rotate(45deg);
-  box-shadow: none;
-}
+    left: 5px;
+    transform: rotate(45deg);
+    box-shadow: none;
+    }
 
 .modal__close::after {
-  left: 5px;
-  transform: rotate(-45deg);
-  box-shadow: none;
+    left: 5px;
+    transform: rotate(-45deg);
+    box-shadow: none;
 }
 
-.modal__wrap{
+.modal__wrap {
     // display: none;
     width: 540px;
-    // position: absolute;
     padding: 56px;
     background: $white;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
@@ -63,13 +62,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-// .modal--active{
-//     display: block;
-//     position: fixed;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
+
 .modal__label{
     font-family: gilory;
     font-size: 20px;
@@ -102,13 +95,16 @@
     letter-spacing: 0.04em;
     color: $deep-blue ;
     border: 1px solid #356EAD;
+    opacity: 0.2;
     box-sizing: border-box;
     border-radius: 10px;
+
 }
-.input__place--message{
+.input__place--message {
     height: 144px;
+    padding-bottom: 60px;
 }
-.modal__button{
+.modal__button {
     width: 428px;
     height: 72px;
     text-transform: uppercase;
