@@ -68,7 +68,7 @@ modalWindow.addEventListener('submit', function (event) {
     event.preventDefault();
 
     cleanErrors();
-
+    
     for (let i = 0; i < inputPlace.length; i++) {
         if (!inputPlace[i].value) {
             // console.log('do not have any value ', inputPlace[i]);
@@ -79,9 +79,28 @@ modalWindow.addEventListener('submit', function (event) {
             inputPlace[i].parentElement.insertAdjacentElement('beforeend', error) ;
             modalWindow.classList.add('form-error');
         }
+        else {
+            modalWindow.classList.remove('form-error');
+        }
     }
 
-    // modalWindow.reset();
+    let classError = [];
+
+    inputPlace.forEach(item => {
+        if (item.classList.contains('input-error')) {
+            classError.push(item.className)
+        }
+    });
+
+    if (!classError.length) {
+        modalWindow.classList.remove('form-error');
+    }
+    
+    if (!modalWindow.classList.contains('form-error')) {
+        console.log('form send');
+        modalWindow.reset();
+    }
+
 })
 
 let cleanErrors = function () {
@@ -89,6 +108,9 @@ let cleanErrors = function () {
 
     for (let i = 0; i < errors.length; i++) {
         errors[i].remove();
+    }
+    for (let i = 0; i < inputPlace.length; i++) {
+        inputPlace[i].classList.remove('input-error');
     }
 }
 

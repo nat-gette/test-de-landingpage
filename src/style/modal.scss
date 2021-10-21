@@ -98,7 +98,10 @@
     // opacity: 0.2;
     box-sizing: border-box;
     border-radius: 10px;
-
+    outline: none;
+    &:focus {
+        border-color: rgb(218, 205, 105);
+    }
 }
 .input__place--message {
     height: 144px;
