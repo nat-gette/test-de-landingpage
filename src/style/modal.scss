@@ -95,7 +95,7 @@
     letter-spacing: 0.04em;
     color: $deep-blue ;
     border: 1px solid #356EAD;
-    opacity: 0.2;
+    // opacity: 0.2;
     box-sizing: border-box;
     border-radius: 10px;
 
@@ -108,4 +108,14 @@
     width: 428px;
     height: 72px;
     text-transform: uppercase;
+}
+.error-style{
+    font-family: gilory;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+    color: rgb(218, 49, 113);
+}
+.input-error{
+    border-color: rgb(218, 49, 113);
 }

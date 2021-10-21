@@ -48,6 +48,8 @@
 
 .header__hamburger::before,
 .header__hamburger::after {
+  top: 1px;
+  left: 1px;
   content: ""; 
   position: absolute;
   width: 24px;
@@ -60,12 +62,14 @@
 
 .header__hamburger--active::before {
   top: 5px;
+  left: 1px;
   transform: rotate(45deg);
   box-shadow: none;
 }
 
 .header__hamburger--active::after {
   top: 5px;
+  left: 1px;
   transform: rotate(-45deg);
   box-shadow: none;
 }
@@ -73,5 +77,9 @@
 @media ( max-width: 360px ) {
   .header__wrap {
       padding: 42px 53px 0 53px;
+  }
+  .header__hamburger {
+    right: 60px;
+    top: 55px;
   }
 }

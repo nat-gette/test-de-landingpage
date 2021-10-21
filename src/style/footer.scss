@@ -2,6 +2,8 @@
 .footer{
     background-color: $deep-blue ;
     color: $white;
+    // width: 93%;
+    // padding: 0 0 0 7%;
     // border-radius: 0 150px  0 0; 
 }
 .question__wrap {
@@ -21,6 +23,7 @@
 
 .question__title {
     max-width: 317px;
+    margin-top: 91px;
 }
 
 // .question__text
@@ -114,6 +117,9 @@
     width: 100%;
     margin: 64px  0;
 }
+// .svg-line{
+
+// }
 
 @media ( max-width: 360px ) {
     .question__wrap{
