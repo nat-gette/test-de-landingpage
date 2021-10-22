@@ -65,6 +65,8 @@ modalWindow.addEventListener("submit", function (event) {
 
     if (!classError.length) {
         modalWindow.classList.remove("form-error");
+    } else {
+        modalWindow.classList.add("form-error");
     }
 
     if (!modalWindow.classList.contains("form-error")) {
