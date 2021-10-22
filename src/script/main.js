@@ -70,7 +70,23 @@ modalWindow.addEventListener("submit", function (event) {
   }
 
   if (!modalWindow.classList.contains("form-error")) {
-    // console.log('form send');
+    const sendData = {
+      userName: userName.value,
+      userMail: userMail.value,
+      userMessage: userMessage.value,
+    };
+
+    fetch('https://jsonplaceholder.typicode.com/posts/1/comments', {
+        method: "POST",
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+        body: JSON.stringify(sendData)
+    })
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+
     modalWindow.reset();
 
     let success = document.createElement("div");
@@ -96,3 +112,4 @@ let cleanErrors = function () {
     inputPlace[i].classList.remove("input-error");
   }
 };
+

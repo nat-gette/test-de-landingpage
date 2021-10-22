@@ -121,12 +121,17 @@
 
 .footer__copyright {
     width: 100%;
-    margin: 64px  0;
+    margin: 64px 0 0;
 }
 
-.footer--bachground {
+
+.footer-wrap {
     background-color: $blue ;
 
+}
+
+.footer__about-company {
+    padding-bottom: 64px;
 }
 
 @media ( max-width: 360px ) {
@@ -194,4 +199,5 @@
     .socials__item {
         margin: 0 0 5px 0;
     }
+    
 }
