@@ -20,9 +20,9 @@
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    z-index: 6;
-
+    z-index: 2;
 }
+
 .hamburger__menu {
     position: relative;
     right: 30px;
@@ -38,10 +38,12 @@
         display: block;
     }
 }
+
 .hamburger__item {
-    color: $white ;
+    color: $white;
     margin: 0 0 30px 0;
 }
+
 .header__hamburger:focus {
     outline: none;
 }
@@ -55,7 +57,7 @@
     width: 24px;
     height: 2.5px;
     background-color: $dark-blue ;
-    box-shadow: 0 8px 0 0 $dark-blue , 
+    box-shadow: 0 8px 0 0 $dark-blue, 
                 0 16px 0 0 $dark-blue;
     transition: all ease-out .3s;
 }
@@ -75,11 +77,12 @@
 }
 
 @media ( max-width: 360px ) {
-  .header__wrap {
-      padding: 42px 53px 0 53px;
-  }
-  .header__hamburger {
-    right: 60px;
-    top: 55px;
-  }
+    .header__wrap {
+        padding: 42px 53px 0 53px;
+    }
+
+    .header__hamburger {
+        right: 60px;
+        top: 55px;
+    }
 }

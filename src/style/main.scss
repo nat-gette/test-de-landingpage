@@ -15,7 +15,10 @@ body {
     background-size: 750px, auto;
     background-repeat: no-repeat;
     background-position: 88% 81px;
-  
+}
+
+.body-no-scroll {
+    overflow-y: hidden;
 }
 
 .container {
@@ -40,7 +43,6 @@ body {
     &:hover {
         background-color: $dark-blue; 
     }
- 
 }
 
 .body-text {
@@ -58,7 +60,6 @@ body {
 }
 
 @media ( max-width: 360px ) {
-
     body {
         background-image: none;
     }
@@ -83,4 +84,4 @@ body {
 @import "about.scss";
 @import "clients.scss";
 @import "footer.scss";
-@import "modal.scss"
+@import "modal.scss";

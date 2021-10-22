@@ -23,7 +23,6 @@
     background-color: transparent;
     cursor: pointer;
     z-index: 6;
-
 }
 
 .modal__close::before,
@@ -52,7 +51,6 @@
 
 
 .modal__wrap {
-    // display: none;
     width: 540px;
     padding: 56px;
     background: $white;
@@ -93,7 +91,6 @@
 .input__place {
     width: 428px;
     height: 72px;
-    // text-align: start;
     padding: 0 0 0 42px;
     font-family: gilory;
     font-size: 16px;
@@ -101,7 +98,6 @@
     letter-spacing: 0.04em;
     color: $deep-blue ;
     border: 1px solid #356EAD;
-    // opacity: 0.2;
     box-sizing: border-box;
     border-radius: 10px;
     outline: none;

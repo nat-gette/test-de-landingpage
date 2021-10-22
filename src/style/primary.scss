@@ -1,7 +1,6 @@
 .primary {
     padding-bottom: 205px;
-    background: linear-gradient(0deg, #98C3E8 -50%, rgba(152, 195, 232, 0.2) 31%);
-    
+    background: linear-gradient(0deg, #98C3E8 -50%, rgba(152, 195, 232, 0.2) 31%); 
 }
 
 .primary__element {
@@ -29,7 +28,6 @@
 }
 
 @media ( max-width: 360px ) {
-
     .primary {
         padding-bottom: 70px;
     }
@@ -39,13 +37,13 @@
         font-size: 47px;
         line-height: 55px;
     
-   }
+    }
 
-   .primary__element {
-       width: auto;
-   }
+    .primary__element {
+        width: auto;
+    }
 
-   .primary__text {
-       margin: 0 0 35px 0;
-   }
-  }
+    .primary__text {
+        margin: 0 0 35px 0;
+    }
+}
