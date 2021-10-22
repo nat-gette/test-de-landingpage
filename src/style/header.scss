@@ -1,77 +1,77 @@
 .header__wrap {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%; 
-  background-color: transparent;
-  align-items: flex-start;
-  padding: 51px 83px 0 83px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%; 
+    background-color: transparent;
+    align-items: flex-start;
+    padding: 51px 83px 0 83px;
+    margin: 0 auto;
 }
 
 .header__hamburger {
-  position: absolute;
-  top: 50px;
-  right: 80px;
-  width: 24px;
-  height: 16px;
-  padding: 0;
-  font-size: 0;
-  border: 0;
-  background-color: transparent;
-  cursor: pointer;
-  z-index: 6;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    width: 24px;
+    height: 16px;
+    padding: 0;
+    font-size: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 6;
 
 }
 .hamburger__menu {
-  position: relative;
-  right: 30px;
-  width: 250px;
-  height: 250px;
-  margin: 0;
-  padding: 20px 0 20px 0;
-  text-align: center;
-  list-style: none;
-  background-color: $dark-blue ;
-  display: none;
-   &--active{
-     display: block;
-   }
+    position: relative;
+    right: 30px;
+    width: 250px;
+    height: 250px;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    list-style: none;
+    background-color: $dark-blue ;
+    display: none;
+    &--active{
+        display: block;
+    }
 }
 .hamburger__item {
-  color: $white ;
-  margin: 0 0 30px 0;
+    color: $white ;
+    margin: 0 0 30px 0;
 }
 .header__hamburger:focus {
-  outline: none;
+    outline: none;
 }
 
 .header__hamburger::before,
 .header__hamburger::after {
-  top: 1px;
-  left: 1px;
-  content: ""; 
-  position: absolute;
-  width: 24px;
-  height: 2.5px;
-  background-color: $dark-blue ;
-  box-shadow: 0 8px 0 0 $dark-blue , 
-            0 16px 0 0 $dark-blue;
-  transition: all ease-out .3s;
+    top: 1px;
+    left: 1px;
+    content: ""; 
+    position: absolute;
+    width: 24px;
+    height: 2.5px;
+    background-color: $dark-blue ;
+    box-shadow: 0 8px 0 0 $dark-blue , 
+                0 16px 0 0 $dark-blue;
+    transition: all ease-out .3s;
 }
 
 .header__hamburger--active::before {
-  top: 5px;
-  left: 1px;
-  transform: rotate(45deg);
-  box-shadow: none;
+    top: 5px;
+    left: 1px;
+    transform: rotate(45deg);
+    box-shadow: none;
 }
 
 .header__hamburger--active::after {
-  top: 5px;
-  left: 1px;
-  transform: rotate(-45deg);
-  box-shadow: none;
+    top: 5px;
+    left: 1px;
+    transform: rotate(-45deg);
+    box-shadow: none;
 }
 
 @media ( max-width: 360px ) {

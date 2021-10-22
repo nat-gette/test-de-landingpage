@@ -1,4 +1,3 @@
-// $main-background: #cccccc;
 @import "fonts.scss";
 
 $deep-blue: #1F3F68;
@@ -6,79 +5,78 @@ $dark-blue:  #316099;
 $blue: #5A98D0;
 $white: #ffffff;
 
-// $ubuntuRegular: 'ubunturegular', Arial, sans-serif;
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background-image: url( "../img/illustration.png");
-  background-size: 750px, auto;
-  background-repeat: no-repeat;
-  background-position: 88% 81px;
+    margin: 0;
+    background-image: url( "../img/illustration.png");
+    background-size: 750px, auto;
+    background-repeat: no-repeat;
+    background-position: 88% 81px;
   
 }
 
 .container {
-  width: 980px;
-  margin: 0 auto;
-  padding: 0 20px;
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .btn {
-  width: 220px;
-  height: 56px;
-  font-family: gilory;
-  font-size: 16px;
-  line-height: 26px;
-  color: $white;
-  background: $blue;
-  box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
-  border: 0;
-  border-radius: 10px;
-  transition: all ease-in .5s;
-  cursor: pointer;
-  &:hover {
-       background-color: $dark-blue; 
-   }
+    width: 220px;
+    height: 56px;
+    font-family: gilory;
+    font-size: 16px;
+    line-height: 26px;
+    color: $white;
+    background: $blue;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border: 0;
+    border-radius: 10px;
+    transition: all ease-in .5s;
+    cursor: pointer;
+    &:hover {
+        background-color: $dark-blue; 
+    }
  
 }
+
 .body-text {
-  font-family: gilory;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.05em;
+    font-family: gilory;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
 }
+
 .section-title {
-  font-family: gilory;
-  font-size: 36px;
-  line-height: 46px;
-  letter-spacing: 0.05em;
+    font-family: gilory;
+    font-size: 36px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
 }
 
 @media ( max-width: 360px ) {
-  body {
-    background-image: none;
-  }
-  .body-text{
-    font-size: 12px;
-    line-height: 20px;
-  }
-  .container {
-      width: 100%
-  }
-  .section-title{
-    font-size: 24px;
-    line-height: 36px;
-  }
+
+    body {
+        background-image: none;
+    }
+
+    .body-text{
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .container {
+        width: 100%
+    }
+
+    .section-title{
+        font-size: 24px;
+        line-height: 36px;
+    }
 }
-// p{
-//   margin: 0;
-// }
-// ul{
-//   padding: 0;
-// }
 
 @import "header.scss";
 @import "primary.scss";

@@ -1,41 +1,49 @@
-.clients{
+.clients {
     background-color: $blue;
     border-radius: 150px 0 0 0; 
 }
-.clients__wrap{
+
+.clients__wrap {
     color: $white;
 }
-.clients__header{
+
+.clients__header {
     display: flex;
     justify-content: space-between;
     padding: 96px 0 111px 0;
 }
+
 .clients__title {
     margin: 0 97px 0 0;
     min-width: 223px;
 }
-.clients__text{
+
+.clients__text {
     margin: 0;
     padding: 0 80px 0 0;
 }
-.clients-space{
+
+.clients-space {
     padding-bottom: 125px;
 }
-.clients-space__list{
+
+.clients-space__list {
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.clients-space__item{
+
+.clients-space__item {
     width: 25%;
     height: 128px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.clients--link{
+
+.clients--link {
     background-color: rgba(#1F3F68, 0.2);
     transition: all ease-in .5s;
     cursor: pointer;
@@ -43,7 +51,8 @@
         background-color: rgba(#1F3F68, 0.3);
     }
 }
-.clients-space__link{
+
+.clients-space__link {
     font-family: gilory;
     font-size: 20px;
     line-height: 46px;    
@@ -51,44 +60,55 @@
     color: $white; 
     text-decoration: none;
 }
-.border-right{ 
+
+.border-right { 
     border-right:  1px solid $white; 
 }
-.border-bottom{
+
+.border-bottom {
     border-bottom: 1px solid $white;
 }
 
 @media ( max-width: 360px ) {
-    .clients{
+    .clients {
         border-radius: 90px 0 0 0; 
     }
-    .clients__header{
+
+    .clients__header {
         display: block;
         padding: 55px 0 10px 0;
     }
-    .clients__title{
+
+    .clients__title {
         margin: 0 0 30px 0;
     }
-    .clients__text{
+
+    .clients__text {
         padding: 0;
     }
+
     .clients-space {
         padding-bottom: 50px;
     }
-    .clients-space__item{
+
+    .clients-space__item {
         width: 50%;
     }
-    .border-bottom{
+
+    .border-bottom {
         border: none;
     }
-    .border-right{
+
+    .border-right {
         border: none;
 
     }
-    .cliens-space__item-img{
+
+    .cliens-space__item-img {
         max-width: 90%;
     }
-    .clients-space__link{
+
+    .clients-space__link {
         font-size: 15px;
     }
 }

@@ -1,7 +1,7 @@
 .primary {
     padding-bottom: 205px;
     background: linear-gradient(0deg, #98C3E8 -50%, rgba(152, 195, 232, 0.2) 31%);
-    // opacity: 0.2;
+    
 }
 
 .primary__element {
@@ -9,6 +9,7 @@
     flex-direction: column;
     width: 510px;
 }
+
 .primary__slogan {
     margin: 189px 0 32px 0;
     font-family: galien;
@@ -18,6 +19,7 @@
     color: $deep-blue;
 
 }
+
 .primary__text {
     margin: 0 0 71px 0;;
     font-size: 16px;
@@ -27,19 +29,23 @@
 }
 
 @media ( max-width: 360px ) {
-    .primary{
+
+    .primary {
         padding-bottom: 70px;
     }
-   .primary__slogan{
+
+    .primary__slogan {
         margin: 115px 0 32px 0;
         font-size: 47px;
         line-height: 55px;
     
    }
-   .primary__element{
+
+   .primary__element {
        width: auto;
    }
-   .primary__text{
+
+   .primary__text {
        margin: 0 0 35px 0;
    }
   }

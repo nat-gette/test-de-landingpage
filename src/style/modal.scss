@@ -36,19 +36,20 @@
     box-shadow: 0 8px 0 0 $dark-blue , 
             0 16px 0 0 $dark-blue;
     transition: all ease-out .3s;
-    }
+}
 
 .modal__close::before {
     left: 5px;
     transform: rotate(45deg);
     box-shadow: none;
-    }
+}
 
 .modal__close::after {
     left: 5px;
     transform: rotate(-45deg);
     box-shadow: none;
 }
+
 
 .modal__wrap {
     // display: none;
@@ -63,19 +64,23 @@
     transform: translate(-50%, -50%);
 }
 
-.modal__label{
+
+.modal__label {
     font-family: gilory;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.04em;
 }
+
 .modal__input {
     padding: 0 0 32px 0;
 }
+
 .input {
     display: flex;
     flex-direction: column;
 }
+
 .input__name {
     margin: 0 0 8px 0;
     font-family: gilory;
@@ -84,6 +89,7 @@
     letter-spacing: 0.04em;
     color: $deep-blue ;
 }
+
 .input__place {
     width: 428px;
     height: 72px;
@@ -100,25 +106,43 @@
     border-radius: 10px;
     outline: none;
     &:focus {
-        border-color: rgb(218, 205, 105);
+        border-color: #D7BD34;
     }
 }
+
 .input__place--message {
     height: 144px;
     padding-bottom: 60px;
 }
+
 .modal__button {
     width: 428px;
     height: 72px;
     text-transform: uppercase;
 }
-.error-style{
+
+.error-style {
     font-family: gilory;
     font-size: 12px;
     line-height: 18px;
     margin-top: 5px;
-    color: rgb(218, 49, 113);
+    color: #D81B60;
 }
-.input-error{
-    border-color: rgb(218, 49, 113);
+
+.input-error {
+    border-color: #D81B60;
+}
+
+.success-style {
+    width: 416px;
+    height: 70px;
+    text-align: center;
+    background-color: rgba(16, 177, 94, 0.2);
+    font-family: gilory;
+    font-size: 16px;
+    line-height: 30px;
+    color: #1F3F68;
+    text-transform: uppercase;
+    margin: 20px 0 0 0;
+    padding: 20px 0;
 }
